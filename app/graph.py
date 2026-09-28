@@ -37,7 +37,7 @@ workflow.add_edge("web_search", "generate")
 workflow.add_conditional_edges(
     "generate",
     grade_generation,
-    {"useful": END, "not supported": "generate"}
+    {"useful": END, "not supported": "generate", "max_retries": END}
 )
 
 app = workflow.compile()

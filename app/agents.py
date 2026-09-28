@@ -9,6 +9,8 @@ from app.retriever import retriever
 
 tavily = TavilyClient(api_key=os.getenv("TAVILY_API_KEY"))
 
+MAX_GENERATIONS = 3
+
 router_prompt = ChatPromptTemplate.from_messages([
     ("system", "Classify the question as vectorstore or web_search. Return JSON only with key datasource, value either vectorstore or web_search."),
     ("human", "{question}")
@@ -71,7 +73,7 @@ gen_chain = gen_prompt | llm
 def generate(state: AgentState):
     context = "\n\n".join([d.page_content for d in state["documents"]])
     generation = gen_chain.invoke({"context": context, "question": state["question"]}).content
-    return {"generation": generation, "documents": state["documents"], "question": state["question"]}
+    return {"generation": generation, "documents": state["documents"], "question": state["question"], "retries": state.get("retries", 0) + 1}
 
 hallucination_prompt = ChatPromptTemplate.from_messages([
     ("system", "Is the answer fully supported by the given context? Return JSON only with key score, value either yes or no. This check reduces hallucination risk but does not guarantee correctness."),
@@ -83,4 +85,8 @@ hallucination_chain = hallucination_prompt | llm | JsonOutputParser()
 def grade_generation(state: AgentState):
     context = "\n\n".join([d.page_content for d in state["documents"]])
     result = hallucination_chain.invoke({"documents": context, "generation": state["generation"]})
-    return "useful" if result["score"] == "yes" else "not supported"
+    if result["score"] == "yes":
+        return "useful"
+    if state.get("retries", 0) >= MAX_GENERATIONS:
+        return "max_retries"
+    return "not supported"
