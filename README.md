@@ -1,5 +1,7 @@
 # Agentic RAG System
 
+[![CI](https://github.com/RydynaAi/agentic_rag_project/actions/workflows/ci.yml/badge.svg)](https://github.com/RydynaAi/agentic_rag_project/actions/workflows/ci.yml)
+
 A production-style Retrieval-Augmented Generation system that goes beyond standard RAG by adding dynamic routing, self-corrective retrieval grading (CRAG), query rewriting, and hallucination checking — orchestrated as a stateful graph with LangGraph.
 
 ## Overview
