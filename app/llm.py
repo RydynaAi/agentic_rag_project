@@ -1,8 +1,8 @@
-from dotenv import load_dotenv
+from app.config import validate_env
 from langchain_groq import ChatGroq
 from langchain_community.embeddings.fastembed import FastEmbedEmbeddings
 
-load_dotenv()
+validate_env()
 
 llm = ChatGroq(model="openai/gpt-oss-120b", temperature=0)
 
