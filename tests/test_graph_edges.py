@@ -72,3 +72,15 @@ def test_generation_stops_after_max_retries(monkeypatch):
     result = graph.invoke({"question": "q"})
     assert result["generation"] == "final answer"
     assert result["retries"] == agents.MAX_GENERATIONS
+
+
+class FailingTavily:
+    def search(self, query, max_results):
+        raise RuntimeError("tavily down")
+
+
+def test_web_search_failure_falls_back_to_internal_docs(monkeypatch):
+    setup(monkeypatch, "vectorstore", [{"score": "no"}], [{"score": "yes"}])
+    monkeypatch.setattr(agents, "tavily", FailingTavily())
+    result = graph.invoke({"question": "q"})
+    assert result["generation"] == "final answer"
