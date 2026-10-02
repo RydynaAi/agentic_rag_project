@@ -23,7 +23,7 @@ def test_ask_returns_answer(monkeypatch):
     client = make_client(monkeypatch, FakeGraph(result={"generation": "ok"}))
     response = client.post("/ask", json={"question": "What is RAG?"})
     assert response.status_code == 200
-    assert response.json() == {"answer": "ok"}
+    assert response.json() == {"answer": "ok", "sources": [], "supported": True}
 
 
 def test_empty_question_is_rejected(monkeypatch):
@@ -41,3 +41,12 @@ def test_pipeline_failure_returns_clear_error(monkeypatch):
     response = client.post("/ask", json={"question": "q"})
     assert response.status_code == 500
     assert "failed" in response.json()["detail"]
+
+
+def test_sources_and_support_flag_are_returned(monkeypatch):
+    sources = [{"source": "paper.pdf", "page": 3, "snippet": "text"}]
+    graph = FakeGraph(result={"generation": "declined", "sources": sources, "supported": False})
+    client = make_client(monkeypatch, graph)
+    body = client.post("/ask", json={"question": "q"}).json()
+    assert body["sources"] == sources
+    assert body["supported"] is False

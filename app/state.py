@@ -8,3 +8,5 @@ class AgentState(TypedDict):
     web_search: bool
     documents: List[str]
     retries: int
+    sources: List[dict]
+    supported: bool

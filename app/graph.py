@@ -7,7 +7,8 @@ from app.agents import (
     transform_query,
     web_search,
     generate,
-    grade_generation
+    grade_generation,
+    abstain
 )
 
 workflow = StateGraph(AgentState)
@@ -17,6 +18,7 @@ workflow.add_node("grade_documents", grade_documents)
 workflow.add_node("generate", generate)
 workflow.add_node("transform_query", transform_query)
 workflow.add_node("web_search", web_search)
+workflow.add_node("abstain", abstain)
 
 workflow.set_conditional_entry_point(
     route_question,
@@ -37,7 +39,9 @@ workflow.add_edge("web_search", "generate")
 workflow.add_conditional_edges(
     "generate",
     grade_generation,
-    {"useful": END, "not supported": "generate", "max_retries": END}
+    {"useful": END, "not supported": "generate", "max_retries": "abstain"}
 )
+
+workflow.add_edge("abstain", END)
 
 app = workflow.compile()

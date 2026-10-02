@@ -25,7 +25,17 @@ if st.button("Send"):
             st.error("The request took too long. Please try again.")
         else:
             if response.ok:
-                st.write(response.json()["answer"])
+                data = response.json()
+                st.write(data["answer"])
+                if not data.get("supported", True):
+                    st.warning("The system could not verify an answer against the documents, so it declined to answer.")
+                sources = data.get("sources", [])
+                if sources:
+                    with st.expander(f"Sources ({len(sources)})"):
+                        for source in sources:
+                            page = f", page {source['page']}" if source.get("page") else ""
+                            st.markdown(f"**{source['source']}{page}**")
+                            st.caption(source["snippet"])
             elif response.status_code == 422:
                 st.warning("Please enter a valid question.")
             else:

@@ -23,4 +23,8 @@ def ask(query: Query):
             status_code=500,
             detail="The pipeline failed while answering your question. Please try again.",
         )
-    return {"answer": result["generation"]}
+    return {
+        "answer": result["generation"],
+        "sources": result.get("sources", []),
+        "supported": result.get("supported", True),
+    }

@@ -70,7 +70,9 @@ def test_unsupported_answer_is_regenerated_once(monkeypatch):
 def test_generation_stops_after_max_retries(monkeypatch):
     setup(monkeypatch, "vectorstore", [{"score": "yes"}], [{"score": "no"}] * 5)
     result = graph.invoke({"question": "q"})
-    assert result["generation"] == "final answer"
+    assert result["generation"] == agents.ABSTAIN_MESSAGE
+    assert result["supported"] is False
+    assert result["sources"] == []
     assert result["retries"] == agents.MAX_GENERATIONS
 
 
