@@ -1,0 +1,929 @@
+[
+ {
+  "id": "q001",
+  "question": "What is the name of the generative AI chatbot tested in the randomized trial?",
+  "expected_answer": "Therabot",
+  "keywords": [
+   "Therabot"
+  ],
+  "expected_route": "vectorstore"
+ },
+ {
+  "id": "q002",
+  "question": "How many adults were enrolled in the trial?",
+  "expected_answer": "210 adults",
+  "keywords": [
+   "210"
+  ],
+  "expected_route": "vectorstore"
+ },
+ {
+  "id": "q003",
+  "question": "How many participants were assigned to the Therabot group and how many to the waitlist control?",
+  "expected_answer": "106 to Therabot and 104 to the waitlist control",
+  "keywords": [
+   "106",
+   "104"
+  ],
+  "expected_route": "vectorstore"
+ },
+ {
+  "id": "q004",
+  "question": "Which three mental health conditions were studied?",
+  "expected_answer": "Major depressive disorder, generalized anxiety disorder, and clinically high risk for feeding and eating disorders",
+  "keywords": [
+   "depressive",
+   "anxiety",
+   "eating"
+  ],
+  "expected_route": "vectorstore"
+ },
+ {
+  "id": "q005",
+  "question": "Which two language models were used together to power Therabot?",
+  "expected_answer": "Falcon-7B and LLaMA-2-70B",
+  "keywords": [
+   "Falcon-7B",
+   "LLaMA-2-70B"
+  ],
+  "expected_route": "vectorstore"
+ },
+ {
+  "id": "q006",
+  "question": "Which efficient fine-tuning technique was applied during training?",
+  "expected_answer": "QLoRA (quantized low-rank adaptation)",
+  "keywords": [
+   "QLoRA"
+  ],
+  "expected_route": "vectorstore"
+ },
+ {
+  "id": "q007",
+  "question": "On which cloud platform were the models trained and deployed?",
+  "expected_answer": "AWS SageMaker",
+  "keywords": [
+   "SageMaker"
+  ],
+  "expected_route": "vectorstore"
+ },
+ {
+  "id": "q008",
+  "question": "How were participants recruited?",
+  "expected_answer": "Through a Meta Ads campaign across the United States",
+  "keywords": [
+   "Meta"
+  ],
+  "expected_route": "vectorstore"
+ },
+ {
+  "id": "q009",
+  "question": "Which questionnaire measured depression symptoms?",
+  "expected_answer": "PHQ-9",
+  "keywords": [
+   "PHQ-9"
+  ],
+  "expected_route": "vectorstore"
+ },
+ {
+  "id": "q010",
+  "question": "Which questionnaire measured anxiety symptoms?",
+  "expected_answer": "GAD-Q-IV",
+  "keywords": [
+   "GAD-Q-IV"
+  ],
+  "expected_route": "vectorstore"
+ },
+ {
+  "id": "q011",
+  "question": "What was the mean PHQ-9 change from baseline to 4 weeks in the Therabot group?",
+  "expected_answer": "-6.13",
+  "keywords": [
+   "6.13"
+  ],
+  "expected_route": "vectorstore"
+ },
+ {
+  "id": "q012",
+  "question": "What was the mean PHQ-9 change from baseline to 4 weeks in the control group?",
+  "expected_answer": "-2.63",
+  "keywords": [
+   "2.63"
+  ],
+  "expected_route": "vectorstore"
+ },
+ {
+  "id": "q013",
+  "question": "What was the Cohen's d effect size for depression symptoms at 4 weeks?",
+  "expected_answer": "0.845",
+  "keywords": [
+   "0.845"
+  ],
+  "expected_route": "vectorstore"
+ },
+ {
+  "id": "q014",
+  "question": "Which instrument measured therapeutic alliance?",
+  "expected_answer": "Working Alliance Inventory - Short Revised (WAI-SR)",
+  "keywords": [
+   "WAI-SR"
+  ],
+  "expected_route": "vectorstore"
+ },
+ {
+  "id": "q015",
+  "question": "What was the overall mean WAI-SR score reported by participants?",
+  "expected_answer": "3.59",
+  "keywords": [
+   "3.59"
+  ],
+  "expected_route": "vectorstore"
+ },
+ {
+  "id": "q016",
+  "question": "What was the mean number of messages sent by participants in the Therabot group?",
+  "expected_answer": "260",
+  "keywords": [
+   "260"
+  ],
+  "expected_route": "vectorstore"
+ },
+ {
+  "id": "q017",
+  "question": "What was the mean total time participants interacted with Therabot?",
+  "expected_answer": "6.18 hours",
+  "keywords": [
+   "6.18"
+  ],
+  "expected_route": "vectorstore"
+ },
+ {
+  "id": "q018",
+  "question": "Which procedure was used to control for multiple comparisons?",
+  "expected_answer": "Holm-Bonferroni",
+  "keywords": [
+   "Holm"
+  ],
+  "expected_route": "vectorstore"
+ },
+ {
+  "id": "q019",
+  "question": "How many people were screened for the study?",
+  "expected_answer": "1707",
+  "keywords": [
+   [
+    "1707",
+    "1,707"
+   ]
+  ],
+  "expected_route": "vectorstore"
+ },
+ {
+  "id": "q020",
+  "question": "How many times was staff intervention required for participant safety concerns?",
+  "expected_answer": "15 times",
+  "keywords": [
+   "15"
+  ],
+  "expected_route": "vectorstore"
+ },
+ {
+  "id": "q021",
+  "question": "What is the ClinicalTrials.gov registration number of the trial?",
+  "expected_answer": "NCT06013137",
+  "keywords": [
+   "NCT06013137"
+  ],
+  "expected_route": "vectorstore"
+ },
+ {
+  "id": "q022",
+  "question": "Which conditions were listed as exclusion criteria?",
+  "expected_answer": "Active suicidality, mania, and psychosis",
+  "keywords": [
+   "suicidality",
+   "mania",
+   "psychosis"
+  ],
+  "expected_route": "vectorstore"
+ },
+ {
+  "id": "q023",
+  "question": "How much were participants compensated for each assessment?",
+  "expected_answer": "$25",
+  "keywords": [
+   "25"
+  ],
+  "expected_route": "vectorstore"
+ },
+ {
+  "id": "q024",
+  "question": "What limitation related to recruitment did the authors mention?",
+  "expected_answer": "Potential selection bias toward younger, technologically minded participants",
+  "keywords": [
+   "selection bias"
+  ],
+  "expected_route": "vectorstore"
+ },
+ {
+  "id": "q025",
+  "question": "Which statistical model was used to analyze the ordinal outcomes?",
+  "expected_answer": "Cumulative-link mixed models",
+  "keywords": [
+   "cumulative"
+  ],
+  "expected_route": "vectorstore"
+ },
+ {
+  "id": "q026",
+  "question": "How long did the treatment phase with daily prompts last, in weeks?",
+  "expected_answer": "4 weeks",
+  "keywords": [
+   "4"
+  ],
+  "expected_route": "vectorstore"
+ },
+ {
+  "id": "q027",
+  "question": "What was the allocation ratio across the three symptom groups?",
+  "expected_answer": "1:1:1",
+  "keywords": [
+   "1:1:1"
+  ],
+  "expected_route": "vectorstore"
+ },
+ {
+  "id": "q028",
+  "question": "What fixed block size was used for the random assignment sequence?",
+  "expected_answer": "Six",
+  "keywords": [
+   [
+    "six",
+    "6"
+   ]
+  ],
+  "expected_route": "vectorstore"
+ },
+ {
+  "id": "q029",
+  "question": "Which electronic data capture tool hosted at Dartmouth College was used to collect study data?",
+  "expected_answer": "REDCap",
+  "keywords": [
+   "REDCap"
+  ],
+  "expected_route": "vectorstore"
+ },
+ {
+  "id": "q030",
+  "question": "What was the minimum age required to participate?",
+  "expected_answer": "18 years",
+  "keywords": [
+   "18"
+  ],
+  "expected_route": "vectorstore"
+ },
+ {
+  "id": "q031",
+  "question": "What type of model architecture did the systems use?",
+  "expected_answer": "Transformer-based, decoder-only architectures",
+  "keywords": [
+   [
+    "decoder-only",
+    "decoder only"
+   ]
+  ],
+  "expected_route": "vectorstore"
+ },
+ {
+  "id": "q032",
+  "question": "Which kind of therapy were the Therabot training dialogues based on?",
+  "expected_answer": "Third-wave cognitive behavioral therapy",
+  "keywords": [
+   [
+    "third-wave",
+    "third wave"
+   ]
+  ],
+  "expected_route": "vectorstore"
+ },
+ {
+  "id": "q033",
+  "question": "In what year did the authors begin developing Therabot?",
+  "expected_answer": "2019",
+  "keywords": [
+   "2019"
+  ],
+  "expected_route": "vectorstore"
+ },
+ {
+  "id": "q034",
+  "question": "Over how many human hours was Therabot developed?",
+  "expected_answer": "Over 100,000 human hours",
+  "keywords": [
+   [
+    "100,000",
+    "100000"
+   ]
+  ],
+  "expected_route": "vectorstore"
+ },
+ {
+  "id": "q035",
+  "question": "Which safety component was added to detect high-risk content such as suicidal ideation?",
+  "expected_answer": "A crisis classification model",
+  "keywords": [
+   "crisis"
+  ],
+  "expected_route": "vectorstore"
+ },
+ {
+  "id": "q036",
+  "question": "Which early rule-based chatbot was used to emulate a Rogerian therapist?",
+  "expected_answer": "ELIZA",
+  "keywords": [
+   "ELIZA"
+  ],
+  "expected_route": "vectorstore"
+ },
+ {
+  "id": "q037",
+  "question": "Which rule-based chatbot is cited as showing benefits in clinical trials?",
+  "expected_answer": "Woebot",
+  "keywords": [
+   "Woebot"
+  ],
+  "expected_route": "vectorstore"
+ },
+ {
+  "id": "q038",
+  "question": "According to the introduction, what share of people with a mental health disorder receive care?",
+  "expected_answer": "Fewer than half",
+  "keywords": [
+   "half"
+  ],
+  "expected_route": "vectorstore"
+ },
+ {
+  "id": "q039",
+  "question": "What is the score range of the PHQ-9?",
+  "expected_answer": "0 to 27",
+  "keywords": [
+   "27"
+  ],
+  "expected_route": "vectorstore"
+ },
+ {
+  "id": "q040",
+  "question": "What decrease in PHQ-9 score constitutes a clinically meaningful change?",
+  "expected_answer": "A decrease of 5 or more",
+  "keywords": [
+   "5"
+  ],
+  "expected_route": "vectorstore"
+ },
+ {
+  "id": "q041",
+  "question": "What PHQ-9 score is often used as a clinical threshold for MDD screening?",
+  "expected_answer": "10 or more",
+  "keywords": [
+   "10"
+  ],
+  "expected_route": "vectorstore"
+ },
+ {
+  "id": "q042",
+  "question": "What is the total sum score range of the GAD-Q-IV?",
+  "expected_answer": "0 to 13",
+  "keywords": [
+   "13"
+  ],
+  "expected_route": "vectorstore"
+ },
+ {
+  "id": "q043",
+  "question": "What is the score range of the Weight Concerns Scale?",
+  "expected_answer": "0 to 100",
+  "keywords": [
+   "100"
+  ],
+  "expected_route": "vectorstore"
+ },
+ {
+  "id": "q044",
+  "question": "Which tool was used in full as a baseline risk stratification tool for CHR-FED?",
+  "expected_answer": "SWED (Stanford-Washington University Eating Disorder screen)",
+  "keywords": [
+   "SWED"
+  ],
+  "expected_route": "vectorstore"
+ },
+ {
+  "id": "q045",
+  "question": "How many Likert-style items is each WAI-SR domain score averaged over?",
+  "expected_answer": "Four",
+  "keywords": [
+   [
+    "four",
+    "4"
+   ]
+  ],
+  "expected_route": "vectorstore"
+ },
+ {
+  "id": "q046",
+  "question": "What was the mean WAI-SR Bond score?",
+  "expected_answer": "3.71",
+  "keywords": [
+   "3.71"
+  ],
+  "expected_route": "vectorstore"
+ },
+ {
+  "id": "q047",
+  "question": "What was the mean WAI-SR Task score?",
+  "expected_answer": "3.47",
+  "keywords": [
+   "3.47"
+  ],
+  "expected_route": "vectorstore"
+ },
+ {
+  "id": "q048",
+  "question": "What was the outpatient-sample norm for the average WAI score cited in Figure 4?",
+  "expected_answer": "3.8",
+  "keywords": [
+   "3.8"
+  ],
+  "expected_route": "vectorstore"
+ },
+ {
+  "id": "q049",
+  "question": "How many participants completed the WAI-SR?",
+  "expected_answer": "96",
+  "keywords": [
+   "96"
+  ],
+  "expected_route": "vectorstore"
+ },
+ {
+  "id": "q050",
+  "question": "How did users rate Therabot on being easy to learn to use, on the seven-point scale?",
+  "expected_answer": "6.42",
+  "keywords": [
+   "6.42"
+  ],
+  "expected_route": "vectorstore"
+ },
+ {
+  "id": "q051",
+  "question": "What was the mean rating for feeling better after interaction with Therabot?",
+  "expected_answer": "5.39",
+  "keywords": [
+   "5.39"
+  ],
+  "expected_route": "vectorstore"
+ },
+ {
+  "id": "q052",
+  "question": "What was the mean overall satisfaction rating?",
+  "expected_answer": "5.30",
+  "keywords": [
+   [
+    "5.30",
+    "5.3"
+   ]
+  ],
+  "expected_route": "vectorstore"
+ },
+ {
+  "id": "q053",
+  "question": "What mean rating did users give for Therabot being similar to a real therapist?",
+  "expected_answer": "4.90",
+  "keywords": [
+   [
+    "4.90",
+    "4.9"
+   ]
+  ],
+  "expected_route": "vectorstore"
+ },
+ {
+  "id": "q054",
+  "question": "How many participants in the Therabot group interacted with it?",
+  "expected_answer": "101 (95%)",
+  "keywords": [
+   "101"
+  ],
+  "expected_route": "vectorstore"
+ },
+ {
+  "id": "q055",
+  "question": "What was the maximum number of messages sent by a single participant?",
+  "expected_answer": "1557",
+  "keywords": [
+   [
+    "1557",
+    "1,557"
+   ]
+  ],
+  "expected_route": "vectorstore"
+ },
+ {
+  "id": "q056",
+  "question": "What was the mean number of days participants interacted with Therabot?",
+  "expected_answer": "24 days",
+  "keywords": [
+   "24"
+  ],
+  "expected_route": "vectorstore"
+ },
+ {
+  "id": "q057",
+  "question": "How many times did staff need to correct inappropriate responses provided by Therabot?",
+  "expected_answer": "13 times",
+  "keywords": [
+   "13"
+  ],
+  "expected_route": "vectorstore"
+ },
+ {
+  "id": "q058",
+  "question": "What is an example of an inappropriate response that staff had to correct?",
+  "expected_answer": "Providing medical advice",
+  "keywords": [
+   "medical advice"
+  ],
+  "expected_route": "vectorstore"
+ },
+ {
+  "id": "q059",
+  "question": "What was the mean PHQ-9 change from baseline to 8 weeks in the Therabot group?",
+  "expected_answer": "-7.93",
+  "keywords": [
+   "7.93"
+  ],
+  "expected_route": "vectorstore"
+ },
+ {
+  "id": "q060",
+  "question": "What was the mean GAD-Q-IV change from baseline to 4 weeks in the Therabot group?",
+  "expected_answer": "-2.32",
+  "keywords": [
+   "2.32"
+  ],
+  "expected_route": "vectorstore"
+ },
+ {
+  "id": "q061",
+  "question": "What was the mean GAD-Q-IV change from baseline to 4 weeks in the control group?",
+  "expected_answer": "-0.13",
+  "keywords": [
+   "0.13"
+  ],
+  "expected_route": "vectorstore"
+ },
+ {
+  "id": "q062",
+  "question": "What was the mean WCS change from baseline to 4 weeks in the Therabot group?",
+  "expected_answer": "-9.83",
+  "keywords": [
+   "9.83"
+  ],
+  "expected_route": "vectorstore"
+ },
+ {
+  "id": "q063",
+  "question": "What was the mean WCS change from baseline to 8 weeks in the control group?",
+  "expected_answer": "-3.70",
+  "keywords": [
+   [
+    "3.70",
+    "3.7"
+   ]
+  ],
+  "expected_route": "vectorstore"
+ },
+ {
+  "id": "q064",
+  "question": "What was the Cohen's d for weight concerns at the 8-week follow-up?",
+  "expected_answer": "0.627",
+  "keywords": [
+   "0.627"
+  ],
+  "expected_route": "vectorstore"
+ },
+ {
+  "id": "q065",
+  "question": "What was the Cohen's d for anxiety symptoms at the 8-week follow-up?",
+  "expected_answer": "0.794",
+  "keywords": [
+   "0.794"
+  ],
+  "expected_route": "vectorstore"
+ },
+ {
+  "id": "q066",
+  "question": "What was the adjusted P value for weight concerns at the 8-week follow-up?",
+  "expected_answer": "0.027",
+  "keywords": [
+   "0.027"
+  ],
+  "expected_route": "vectorstore"
+ },
+ {
+  "id": "q067",
+  "question": "What was the baseline mean PHQ-9 score in the intervention group?",
+  "expected_answer": "15.63",
+  "keywords": [
+   "15.63"
+  ],
+  "expected_route": "vectorstore"
+ },
+ {
+  "id": "q068",
+  "question": "How many intervention-group participants were analyzed for MDD at baseline?",
+  "expected_answer": "73",
+  "keywords": [
+   "73"
+  ],
+  "expected_route": "vectorstore"
+ },
+ {
+  "id": "q069",
+  "question": "How many eligible participants had MDD?",
+  "expected_answer": "142",
+  "keywords": [
+   "142"
+  ],
+  "expected_route": "vectorstore"
+ },
+ {
+  "id": "q070",
+  "question": "How many participants were ineligible because of high risk for clinical eating disorders?",
+  "expected_answer": "480",
+  "keywords": [
+   "480"
+  ],
+  "expected_route": "vectorstore"
+ },
+ {
+  "id": "q071",
+  "question": "How many participants were ineligible because of high risk for suicide?",
+  "expected_answer": "215",
+  "keywords": [
+   "215"
+  ],
+  "expected_route": "vectorstore"
+ },
+ {
+  "id": "q072",
+  "question": "How many intervention-group participants completed the 4-week assessment?",
+  "expected_answer": "99",
+  "keywords": [
+   "99"
+  ],
+  "expected_route": "vectorstore"
+ },
+ {
+  "id": "q073",
+  "question": "How many participants discontinued the Therabot intervention?",
+  "expected_answer": "Six",
+  "keywords": [
+   [
+    "six",
+    "6"
+   ]
+  ],
+  "expected_route": "vectorstore"
+ },
+ {
+  "id": "q074",
+  "question": "Which months of 2024 did the study span?",
+  "expected_answer": "March through May 2024",
+  "keywords": [
+   "March",
+   "May"
+  ],
+  "expected_route": "vectorstore"
+ },
+ {
+  "id": "q075",
+  "question": "What was the mean age of the overall sample?",
+  "expected_answer": "33.86 years",
+  "keywords": [
+   "33.86"
+  ],
+  "expected_route": "vectorstore"
+ },
+ {
+  "id": "q076",
+  "question": "How many participants in the overall sample were female?",
+  "expected_answer": "125",
+  "keywords": [
+   "125"
+  ],
+  "expected_route": "vectorstore"
+ },
+ {
+  "id": "q077",
+  "question": "What percentage of the overall sample reported receiving no current treatment?",
+  "expected_answer": "73.33%",
+  "keywords": [
+   [
+    "73.33",
+    "73.3"
+   ]
+  ],
+  "expected_route": "vectorstore"
+ },
+ {
+  "id": "q078",
+  "question": "What rate of missing data was assumed in the power simulation?",
+  "expected_answer": "10%",
+  "keywords": [
+   [
+    "10%",
+    "10 percent"
+   ]
+  ],
+  "expected_route": "vectorstore"
+ },
+ {
+  "id": "q079",
+  "question": "How many samples were drawn from the model-predicted probability distributions?",
+  "expected_answer": "10,000",
+  "keywords": [
+   [
+    "10,000",
+    "10000"
+   ]
+  ],
+  "expected_route": "vectorstore"
+ },
+ {
+  "id": "q080",
+  "question": "What was the odds ratio for the PHQ-9 change from preintervention to postintervention in Figure 3?",
+  "expected_answer": "0.216",
+  "keywords": [
+   "0.216"
+  ],
+  "expected_route": "vectorstore"
+ },
+ {
+  "id": "w001",
+  "question": "Who is the current CEO of Microsoft?",
+  "expected_answer": "Satya Nadella",
+  "keywords": [
+   "Nadella"
+  ],
+  "expected_route": "web_search"
+ },
+ {
+  "id": "w002",
+  "question": "Who is the current CEO of Tesla?",
+  "expected_answer": "Elon Musk",
+  "keywords": [
+   "Musk"
+  ],
+  "expected_route": "web_search"
+ },
+ {
+  "id": "w003",
+  "question": "Who is the current CEO of NVIDIA?",
+  "expected_answer": "Jensen Huang",
+  "keywords": [
+   "Huang"
+  ],
+  "expected_route": "web_search"
+ },
+ {
+  "id": "w004",
+  "question": "Who is the current CEO of Alphabet?",
+  "expected_answer": "Sundar Pichai",
+  "keywords": [
+   "Pichai"
+  ],
+  "expected_route": "web_search"
+ },
+ {
+  "id": "w005",
+  "question": "Who is the current CEO of Anthropic?",
+  "expected_answer": "Dario Amodei",
+  "keywords": [
+   "Amodei"
+  ],
+  "expected_route": "web_search"
+ },
+ {
+  "id": "w006",
+  "question": "Who is the current CEO of OpenAI?",
+  "expected_answer": "Sam Altman",
+  "keywords": [
+   "Altman"
+  ],
+  "expected_route": "web_search"
+ },
+ {
+  "id": "w007",
+  "question": "Who is the current Secretary-General of the United Nations?",
+  "expected_answer": "Antonio Guterres",
+  "keywords": [
+   "Guterres"
+  ],
+  "expected_route": "web_search"
+ },
+ {
+  "id": "w008",
+  "question": "Who is the current president of France?",
+  "expected_answer": "Emmanuel Macron",
+  "keywords": [
+   "Macron"
+  ],
+  "expected_route": "web_search"
+ },
+ {
+  "id": "w009",
+  "question": "What is the current USD to SAR exchange rate?",
+  "expected_answer": "About 3.75 (pegged)",
+  "keywords": [
+   "3.75"
+  ],
+  "expected_route": "web_search"
+ },
+ {
+  "id": "w010",
+  "question": "What is the latest stable version of Python?",
+  "expected_answer": "",
+  "keywords": [],
+  "expected_route": "web_search"
+ },
+ {
+  "id": "w011",
+  "question": "What are today's top AI news headlines?",
+  "expected_answer": "",
+  "keywords": [],
+  "expected_route": "web_search"
+ },
+ {
+  "id": "w012",
+  "question": "What is the current weather in Riyadh?",
+  "expected_answer": "",
+  "keywords": [],
+  "expected_route": "web_search"
+ },
+ {
+  "id": "w013",
+  "question": "What is the current price of Bitcoin?",
+  "expected_answer": "",
+  "keywords": [],
+  "expected_route": "web_search"
+ },
+ {
+  "id": "w014",
+  "question": "What is the latest version of the LangGraph library?",
+  "expected_answer": "",
+  "keywords": [],
+  "expected_route": "web_search"
+ },
+ {
+  "id": "w015",
+  "question": "Who won the most recent Ballon d'Or?",
+  "expected_answer": "",
+  "keywords": [],
+  "expected_route": "web_search"
+ },
+ {
+  "id": "w016",
+  "question": "What is the latest iPhone model?",
+  "expected_answer": "",
+  "keywords": [],
+  "expected_route": "web_search"
+ },
+ {
+  "id": "w017",
+  "question": "What is the current world population estimate?",
+  "expected_answer": "",
+  "keywords": [],
+  "expected_route": "web_search"
+ },
+ {
+  "id": "w018",
+  "question": "What is the latest Claude model released by Anthropic?",
+  "expected_answer": "",
+  "keywords": [],
+  "expected_route": "web_search"
+ },
+ {
+  "id": "w019",
+  "question": "What are the current trending topics in machine learning?",
+  "expected_answer": "",
+  "keywords": [],
+  "expected_route": "web_search"
+ },
+ {
+  "id": "w020",
+  "question": "What is the current time in Tokyo?",
+  "expected_answer": "",
+  "keywords": [],
+  "expected_route": "web_search"
+ }
+]

@@ -12,8 +12,24 @@ tavily = TavilyClient(api_key=os.getenv("TAVILY_API_KEY"))
 
 MAX_GENERATIONS = 3
 
+VECTORSTORE_DESCRIPTION = (
+    "a single research article, Randomized Trial of a Generative AI Chatbot for Mental Health Treatment "
+    "(NEJM AI, 2025), which evaluates Therabot, a fine-tuned generative AI therapy chatbot, "
+    "in adults with depression, anxiety, or eating disorder risk"
+)
+
+ROUTER_INSTRUCTIONS = (
+    "You route questions to one of two sources. "
+    "The vectorstore contains " + VECTORSTORE_DESCRIPTION + ". "
+    "Choose vectorstore for any question about this article, including its design, participants, methods, "
+    "models, measures, statistics, results, and discussion, even if the question does not name the article. "
+    "Choose web_search for everything else, such as current events, recently changing facts, who currently "
+    "holds a role, prices, weather, software versions, or any topic outside the article. "
+    "Return JSON only with key datasource, value either vectorstore or web_search."
+)
+
 router_prompt = ChatPromptTemplate.from_messages([
-    ("system", "Classify the question as vectorstore or web_search. Return JSON only with key datasource, value either vectorstore or web_search."),
+    ("system", ROUTER_INSTRUCTIONS),
     ("human", "{question}")
 ])
 
